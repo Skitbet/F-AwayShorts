@@ -14,5 +14,11 @@
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+        "id": "skitbet@gmail.com"
+    }
+  }
+    
 }
