@@ -4,7 +4,7 @@ F'Away Shorts is a browser extension that removes the "Shorts/Brain Rot" from Yo
 ## Installation
 
 ### Chrome
-Chrome wants fees im not paying...
+Chrome wants fees im not paying... You must self locally host the extension.
 
 ### Firefox
 https://addons.mozilla.org/en-US/firefox/addon/go-away-shorts/
