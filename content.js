@@ -1,4 +1,7 @@
 function removeContents() {
+    /**
+     * Remove stuff from youtube.com
+     */
     const endpoint = document.querySelector('a#endpoint[title="Shorts"]');
     if (endpoint) {
         endpoint.remove();  
@@ -7,6 +10,22 @@ function removeContents() {
         .find(section => section.querySelector('span#title')?.textContent.trim() === 'Shorts');
     if (shortsSection) {
         shortsSection.remove();
+    }
+
+    /**
+     * Remove short reals
+     */
+    const reelShelfRenderer = document.querySelector('ytd-reel-shelf-renderer');
+    if (reelShelfRenderer) {
+        reelShelfRenderer.remove();
+    }
+
+    /**
+     * Remove youtubeshort tabs
+     */
+    const shortsTab = document.querySelector('yt-tab-shape[tab-title="Shorts"]');
+    if (shortsTab) {
+        shortsTab.remove();
     }
 }
   
@@ -19,5 +38,4 @@ observer.observe(document.body, {
     subtree: true    
 });
 
-// Ensure the script runs on initial load
 document.addEventListener('DOMContentLoaded', removeContents);
